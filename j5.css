@@ -1,0 +1,384 @@
+
+.color_switcher_zone {
+    position: fixed;
+    width: 364px;
+    z-index: 999;
+    background: #fff;
+    padding: 23px 30px 43px 40px;
+    right: -364px;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.switZone_title {
+    position: absolute;
+    right: 100%;
+    top: 45%;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -8px 3px 12px -7px rgba(0, 0, 0, 0.3);
+    /*!  */
+}
+
+.switZone_title a {
+    display: flex;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.header_switcher_style .switcher-title h2 {
+    font: 400 16px/55px 'Poppins';
+    color: #333;
+    display: inline-block;
+    background: #fff;
+    padding: 0px 30px;
+    margin-top: 0;
+}
+
+.header_switcher_style .switcher-title {
+    position: relative;
+    text-align: center;
+}
+
+.header_switcher_style .switcher-title:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    display: inline-block;
+    left: 0;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 27px;
+    z-index: -1;
+}
+
+.switch.grad_color p,
+.header_switcher_style p {
+    font: 400 15px/25px 'Poppins';
+    color: #666666;
+    margin-bottom: 0;
+}
+
+.header_switcher_style .nav li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.header_switcher_style .nav li + li {
+    margin-left: 15px;
+}
+
+.header_switcher_style .nav li:nth-child(odd) {
+    margin-left: 0px;
+}
+
+.header_switcher_style .nav li a {
+    border: 1px solid #666666;
+    color: #333;
+    font: 400 12px/31px 'Poppins';
+    text-transform: uppercase;
+    padding: 2px 5px;
+    transition: all 0.4s linear;
+    text-shadow: none;
+    width: 135px;
+    text-align: center;
+}
+
+.header_switcher_style .nav li.active a,
+.header_switcher_style .nav li a:hover {
+    background: #444;
+    color: #fff;
+}
+
+.switch.grad_color {
+    padding: 0 0 40px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.switch.grad_color ul li {
+    display: inline-block;
+}
+
+.switch.grad_color ul li + li {
+    margin-left: 12px;
+}
+
+.switch.grad_color ul li a {
+    width: 30px;
+    height: 27px;
+    border-radius: 3px;
+    display: block;
+}
+
+.switch.grad_color ul li a.orange-color {
+    background: #eba62a;
+}
+
+.switch.grad_color ul li a.blue-color {
+    background: #53bced;
+}
+
+.switch.grad_color ul li a.dgreen-color {
+    background: #02bb73;
+}
+
+.switch.grad_color ul li a.purple-color {
+    background: #3E31AE;
+}
+
+.switch.grad_color ul li a.red-color {
+    background: #DC3737;
+}
+
+.switch.grad_color ul li a.olive-color {
+    background: #bfaf01;
+}
+
+.button-pr {
+    font: 600 13px/55px 'Poppins';
+    color: #fff;
+    display: block;
+    background: #82b440;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 34px;
+    border-radius: 3px;
+    transition: all 0.5s linear;
+}
+
+.button-pr span {
+    margin-right: 10px;
+}
+
+.button-pr:hover {
+    background: #6e9c30;
+    color: #fff;
+}
+
+.ui-tooltip {
+    pointer-events: none;
+    opacity: 1;
+    display: inline-block;
+    position: absolute;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    font-stretch: condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+    background: #444 !important;
+    height: 50px;
+}
+
+.color_switcher_zone {
+    top: 130px;
+}
+
+/******* Radio button styling *************/
+/* The container */
+.switch_radio_container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 5px;
+}
+
+/* Hide the browser's default radio button */
+.switch_radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+#accent_color_yellow + .checkmark {
+    background-color: #fec110;
+}
+
+#accent_color_53bced + .checkmark {
+    background-color: #53bced;
+}
+
+#accent_color_02bb73 + .checkmark {
+    background-color: #02bb73;
+}
+
+#accent_color_3E31AE + .checkmark {
+    background-color: #3E31AE;
+}
+
+#accent_color_DC3737 + .checkmark {
+    background-color: #DC3737;
+}
+
+#accent_color_F97C46 + .checkmark {
+    background-color: #F97C46;
+}
+
+/* On mouse-over, add a grey background color */
+.switch_radio_container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.switch_radio_container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.switch_radio_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.switch_radio_container .checkmark:after {
+    top: 14px;
+    left: 14px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/***************** Header Styles *******************/
+
+
+.header_styles  a img{ /* IMAGE STYLES */
+    cursor: pointer;
+    border:2px solid transparent;
+    max-width: 100%;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    margin-bottom: 5px;
+}
+
+.header_styles a img:hover{ /* IMAGE STYLES */
+    max-width: 120%;
+    margin-left: -35px;
+}
+
+.header_styles a.active img { /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f00;
+    max-width: 120%;
+    margin-left: -35px;
+}
+
+/****** Title ************/
+.switZone_title .setting::after {
+    content: 'Theme Setting';
+    position: absolute;
+    z-index: -1;
+    top: 9px;
+    left: -125px;
+    color: #555;
+    font-size: 14px;
+    letter-spacing: .6px;
+    background: #fff;
+    padding: 15px 25px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: .5s;
+    box-shadow: 0px 2px 6px 0px rgba(100, 100, 100, 0.3);
+    visibility: hidden;
+}
+
+.switZone_title .doc::after {
+    content: 'Documentation';
+    position: absolute;
+    z-index: -1;
+    top: 9px;
+    left: -124px;
+    color: #555;
+    font-size: 14px;
+    letter-spacing: .6px;
+    background: #fff;
+    padding: 15px 25px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: .5s;
+    box-shadow: 0px 2px 6px 0px rgba(100, 100, 100, 0.3);
+    visibility: hidden;
+}
+
+@media (max-width:991px){
+    .color_switcher_zone {
+        display: none;
+    }
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
+}
